@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Działania</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body id="quiz">
+
+<p id="introduction">
+    Twoim zadaniem jest rozwiązanie quizów algebraicznych w jak najszybszym czasie.
+    Po wpisaniu nazwy użytkownika, a następnie naciśnięciu przycisku <i>"Zacznij nowy quiz"</i>
+    pojawi się pierwsze pytanie i zacznie sięodlicznie czasu. W miejscu do tego przeznaczonym należy
+    wpisać odpowiedź. By przejść do następnego pytania należy wybrać <i>"Dalej"</i>, lub by przejść
+    do poprzedniego pytania należy wybrać <i>"Wstecz"</i>. Można później wrócić do nie zrobiuonego zadania
+    lub poprawić wcześniejszą odpowiedź. By przerwać próbę należy wybrać <i>"Anuluj"</i>. Przeniesiesz się
+    wtedy do widoku głównego menu. By zakończyć quiz należy uzupełnić wszystkie pytania. W przeciwnym wypadku
+    przycisk <i>"Zakańcz"</i> będzie nieaktywny. Za każdą błędną odpowiedź będzie przyznana kara w wysokości
+    10 sekund. Po zakończeniu próby zostanie wyświetlony wynik z dokładnymi statystystykami i poprawnymi
+    odpowiedziami.
+</p>
+
+
+<div id="quiz-area">
+    <p id="timer"> Start! </p>
+    <h1>Jaki jest wynik?</h1>
+    <label for="operation" id="quiz-question"></label>
+    <input type="number" id="operation">
+
+    <div id="navigate">
+        <button id="back" onclick="goBack()">
+            Wstecz
+        </button>
+
+
+        <button id="next" onclick="goNext()">
+            Dalej
+        </button>
+
+
+        <button id="end" onclick="finishQuiz()">
+            Zakończ
+        </button>
+
+        <button id="cancel" onclick="goBackToMenu()">
+            Anuluj
+        </button>
+    </div>
+</div>
+
+
+</body>
+<script src='quiz.js'></script>
+</html>

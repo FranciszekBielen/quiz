@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz wiedzy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+<header>
+    <h1>
+        Quiz wiedzy
+    </h1>
+</header>
+
+<p>
+    Twoim zadaniem jest rozwiązanie quizów algebraicznych w jak najszybszym czasie.
+    Po wpisaniu nazwy użytkownika, a następnie naciśnięciu przycisku <i>"Zacznij nowy quiz"</i>
+    pojawi się pierwsze pytanie i zacznie sięodlicznie czasu. W miejscu do tego przeznaczonym należy
+    wpisać odpowiedź. By przejść do następnego pytania należy wybrać <i>"Dalej"</i>, lub by przejść
+    do poprzedniego pytania należy wybrać <i>"Wstecz"</i>. Można później wrócić do nie zrobiuonego zadania
+    lub poprawić wcześniejszą odpowiedź. By przerwać próbę należy wybrać <i>"Anuluj"</i>. Przeniesiesz się
+    wtedy do widoku głównego menu. By zakończyć quiz należy uzupełnić wszystkie pytania. W przeciwnym wypadku
+    przycisk <i>"Zakańcz"</i> będzie nieaktywny. Za każdą błędną odpowiedź będzie przyznana kara w wysokości
+    10 sekund. Po zakończeniu próby zostanie wyświetlony wynik z dokładnymi statystystykami i poprawnymi
+    odpowiedziami.
+</p>
+
+<div id="startingField">
+    <label for="nickName" class="nickLabel">
+    </label>
+    <input type="text" id="nickName" placeholder="Nazwa użytkownika">
+</div>
+<button id="submit" onclick="startQuiz()">
+    Zacznij nowy quiz
+</button>
+<button id="showStandings" onclick="showStandings()">
+    Pokaż tabelę z wynikami
+</button>
+
+</body>
+<script src='main.js'></script>
+</html>

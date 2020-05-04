@@ -1,0 +1,75 @@
+header {
+    background: url(gg.jpg);
+    color: #f4d46f;
+    font-size: 30px;
+    padding: 60px;
+}
+
+body {
+    text-align: center;
+}
+
+#quiz {
+    background: url(gg.jpg);
+}
+
+#quiz-area {
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navigate {
+    padding-top: 10px;
+}
+
+#introduction {
+    background-color: wheat;
+    padding-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#startingField {
+    padding: 20px;
+}
+
+input[type=text]:focus {
+    background: lightpink;
+    width: 60%;
+}
+
+input[type=text] {
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid purple;
+    width: 180px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=number] {
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid purple;
+    width: 180px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=number]:focus {
+    background: lightpink;
+    width: 60%;
+}
+
+
+button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 12px 42px;
+    text-decoration: none;
+    cursor: pointer;
+}
